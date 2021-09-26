@@ -38,7 +38,7 @@ def test_somar():
     # parte 2 executa
     resultado_atual = somar(num1, num2)
 
-    # parte 3 chek / valida
+    # parte 3 check / valida
     assert resultado_atual == resultado_esperado
 
 def teste_somar_resultado_negativo():
