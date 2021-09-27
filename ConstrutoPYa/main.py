@@ -1,6 +1,7 @@
+# import bibliotecas
 
 import pytest
-
+#2-class
 
 def print_hi(name):
     print(f'Oi, {name}')
@@ -29,12 +30,15 @@ def dividir(num1, num2):
 # teste unitarios/ teste unidades
 
 # teste de função somar
-def test_somar():
-    # parte 1 - configura / prepara
-    num1 = 8  # intput
-    num2 = 5  # intput
-    resultado_esperado = 13  # output
-
+@pytest.mark.parametrize('num1,num2,resultado',[
+    #valores
+    (5, 4, 9), # teste 1
+    (3, 2, 5), # teste 2
+    (10,6, 16), # teste 3
+])
+def test_somar(num1, num2, resultado):
+    assert somar(num1, num2) == resultado
+'''
     # parte 2 executa
     resultado_atual = somar(num1, num2)
 
@@ -65,7 +69,7 @@ def test_dividir():
 if __name__ == '__main__':
     print_hi('Crys')
 
-resultado = somar(1, 2)
+resultado = somar(num1, num2)
 print(f'O resultado da soma: {resultado}')
 
 resultado = subtrair(10, 5)
@@ -77,3 +81,4 @@ print(f'O resultado da multiplicação : {resultado}')
 resultado = dividir(4, 2)
 print(f'O resultado da divisao : {resultado}')
 
+'''
