@@ -24,9 +24,18 @@ def dividir(num1, num2):
         return num1 / num2
     else:
         resultado = "Não dividiras por zero"
-    return resultado
 
+def dividir_try_except(num1,num2):
+    try:
+        return num1 /num2
+    except:
+        return "Não dividiras por zero"
 
+ # parte 2 executa
+    resultado_atual = somar(num1, num2,resultado)
+
+    # parte 3 check / valida
+    assert resultado_atual == resultado_esperado
 # teste unitarios/ teste unidades
 
 # teste de função somar
@@ -34,16 +43,13 @@ def dividir(num1, num2):
     #valores
     (5, 4, 9), # teste 1
     (3, 2, 5), # teste 2
-    (10,6, 16), # teste 3
+    (10,6, 15), # teste 3
 ])
 def test_somar(num1, num2, resultado):
-    assert somar(num1, num2) == resultado
-'''
-    # parte 2 executa
-    resultado_atual = somar(num1, num2)
-
-    # parte 3 check / valida
-    assert resultado_atual == resultado_esperado
+    try:
+        assert somar(num1, num2) == resultado
+    except AssertionError:
+        print(f'Entrou no Except: {AssertionError}')
 
 def teste_somar_resultado_negativo():
     assert somar(-1000,-2000) == -3000
@@ -60,6 +66,12 @@ def test_mutiplicar():
 def test_dividir():
     assert dividir(10, 2) == 5
 
+def teste_dividir_por_zero():
+    assert dividir(8,0) == "Não dividiras por zero"
+
+def test_dividir_try_except_por_zero():
+    assert dividir_try_except(8,0)
+
 #TDD : Desenvolvimento Direcionado pelo Testes
 # - Criar o esqueleto de classes, funções e métodos logo no início da Sprint
 # - Criar pelo 1 teste (feliz) para todas as funções e métodos
@@ -69,7 +81,7 @@ def test_dividir():
 if __name__ == '__main__':
     print_hi('Crys')
 
-resultado = somar(num1, num2)
+resultado = somar(10, 9)
 print(f'O resultado da soma: {resultado}')
 
 resultado = subtrair(10, 5)
@@ -80,5 +92,3 @@ print(f'O resultado da multiplicação : {resultado}')
 
 resultado = dividir(4, 2)
 print(f'O resultado da divisao : {resultado}')
-
-'''
