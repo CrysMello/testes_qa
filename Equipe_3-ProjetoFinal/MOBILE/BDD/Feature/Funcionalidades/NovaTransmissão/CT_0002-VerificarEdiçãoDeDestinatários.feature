@@ -14,9 +14,8 @@ Contexto:
        Dado que acesso o aplicativo do "Whatsapp"
        E clico em editar destinatários 
        E clico em pesquisar
-       E seleciono os 256 constatos
+       E seleciono os 256 contatos
 
-       Então inclusão criada com sucesso
 
 ID: CT_0002
 Cenario: Verificar edição de destinatários
@@ -30,6 +29,110 @@ Cenario: Verificar edição de destinatários
 Esquema do cenario:
 Exemplos:
 |contatos |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|contatos |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|contatos |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
+|Crystiane|
+|Cleide   |
+|Michelle |
 |Crystiane|
 |Cleide   |
 |Michelle |

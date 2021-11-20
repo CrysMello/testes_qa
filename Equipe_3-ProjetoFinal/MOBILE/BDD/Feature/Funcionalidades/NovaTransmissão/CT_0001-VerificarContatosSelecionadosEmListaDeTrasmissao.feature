@@ -16,16 +16,15 @@ Contexto:
        E clico em "nova transmissão"
        E seleciono os "contatos"
             
-       Então crio a nova "lista de transmissão"
 
 ID: CT_0001
 Cenario: Verificar a criação da lista de transmissão
 
       Quando eu acesso a lista de contatos
-      E seleciono os participantes da nova transmissão
+      E seleciono os participantes "Crystiane", "Cleide", "Michelle" 
       E crio a nova transmissão
 
-      Então transmissão criada com sucesso
+      Então crio a nova "lista de transmissão"
 
 Esquema do cenario:
 Exemplos:

@@ -17,7 +17,6 @@ Contexto:
        E clico em status
        E clico em atualizar status
 
-       Então acesso meu status
 
 ID: CT_0003
 Cenario: Validar adição no "status"
@@ -28,5 +27,4 @@ Cenario: Validar adição no "status"
 
       Então status atualizado com sucesso
 
-Esquema do cenario:
-Exemplos:
+
